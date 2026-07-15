@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegant Threads | Premium Women's Fashion</title>
+  <meta name="description" content="Elegant Threads - Premium luxury women's fashion boutique. Discover exclusive sarees, kurtis, lehengas, gowns, and western wear.">
+  <meta name="keywords" content="women fashion, sarees, kurtis, lehengas, gowns, ethnic wear, western wear, luxury fashion, elegant threads">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div id="loading-screen" class="loading-screen">
+  <div class="loading-spinner"></div>
+  <p>Elegant Threads</p>
+</div>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-brand">
+      <div class="brand-icon">E</div>
+      <div class="brand-text">Elegant <span>Threads</span></div>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="categories.html">Categories</a></li>
+      <li><a href="shop.html?sort=newest">New Arrivals</a></li>
+      <li><a href="shop.html?sort=rating">Trending</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="store.html">Visit Store</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="order-form.html">Order Form</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="open-search" title="Search (Ctrl+K)"><i class="fas fa-search"></i></button>
+      <button class="theme-toggle" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+      <a href="order-form.html" class="theme-toggle" style="position:relative;" title="Enquiry List">
+        <i class="fas fa-shopping-bag"></i>
+        <span class="enquiry-badge">0</span>
+      </a>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu">
+  <a href="index.html" class="nav-link">Home</a>
+  <a href="shop.html" class="nav-link">Shop</a>
+  <a href="categories.html" class="nav-link">Categories</a>
+  <a href="shop.html?sort=newest" class="nav-link">New Arrivals</a>
+  <a href="shop.html?sort=rating" class="nav-link">Trending</a>
+  <a href="about.html" class="nav-link">About</a>
+  <a href="store.html" class="nav-link">Visit Store</a>
+  <a href="contact.html" class="nav-link">Contact</a>
+  <a href="order-form.html" class="nav-link">Order Form</a>
+  <div class="mobile-actions">
+    <button class="open-search"><i class="fas fa-search"></i> Search</button>
+    <button class="theme-toggle"><i class="fas fa-moon"></i> Dark Mode</button>
+  </div>
+</div>
+
+<div id="search-overlay" class="search-overlay">
+  <div class="search-container">
+    <button class="search-close"><i class="fas fa-times"></i></button>
+    <div class="search-input-wrap">
+      <span class="search-icon"><i class="fas fa-search"></i></span>
+      <input type="text" id="search-input" placeholder="Search products, categories, fabrics...">
+    </div>
+    <div class="search-filters">
+      <select id="search-category"><option value="">All Categories</option><option>Sarees</option><option>Kurtis</option><option>Lehengas</option><option>Salwar Suits</option><option>Gowns</option><option>Long Dresses</option><option>Western Wear</option><option>Night Wear</option><option>Accessories</option></select>
+      <select id="search-fabric"><option value="">All Fabrics</option><option>Cotton</option><option>Silk</option><option>Linen</option><option>Rayon</option><option>Georgette</option><option>Chiffon</option><option>Crepe</option><option>Velvet</option><option>Net</option></select>
+      <select id="search-occasion"><option value="">All Occasions</option><option>Wedding</option><option>Party</option><option>Office</option><option>Festival</option><option>Daily Wear</option><option>Casual</option><option>Traditional</option></select>
+    </div>
+    <div id="search-results" class="search-results">
+      <p style="text-align:center;color:var(--text-light);padding:30px;">Type at least 2 characters to search...</p>
+    </div>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="hero-slide active" style="background:linear-gradient(135deg,#1a1a1a,#333);">
+    <img src="https://picsum.photos/seed/herobanner1/1920/1080" alt="Elegant Fashion">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-slide" style="background:linear-gradient(135deg,#2d1b33,#1a1a2e);">
+    <img src="https://picsum.photos/seed/herobanner2/1920/1080" alt="Ethnic Collection">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-slide" style="background:linear-gradient(135deg,#1a1a1a,#0d1b2a);">
+    <img src="https://picsum.photos/seed/herobanner3/1920/1080" alt="Party Wear">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <span class="overline">Luxury Fashion Boutique</span>
+      <h1>Discover Your <span>Elegance</span></h1>
+      <p>Explore our curated collection of premium sarees, kurtis, lehengas, and contemporary western wear. Where timeless tradition meets modern sophistication.</p>
+      <div class="hero-buttons">
+        <a href="shop.html" class="btn btn-primary btn-lg"><i class="fas fa-shopping-bag"></i> Explore Collection</a>
+        <a href="categories.html" class="btn btn-outline btn-lg"><i class="fas fa-th-large"></i> Browse Categories</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-dots">
+    <button class="dot active"></button>
+    <button class="dot"></button>
+    <button class="dot"></button>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<section class="promo-banner">
+  <div class="container">
+    <p><span>New Season</span> &mdash; Free shipping on orders above ₹2,000 | <span>Use code: ELEGANT20</span> for 20% off</p>
+  </div>
+</section>
+
+<section class="collection-slider">
+  <div class="collection-track">
+    <div class="collection-card"><img src="https://picsum.photos/seed/col1/600/800" alt="Silk Collection" loading="lazy"><div class="overlay"><h3>Silk Collection</h3><p>Premium silk sarees</p></div></div>
+    <div class="collection-card"><img src="https://picsum.photos/seed/col2/600/800" alt="Bridal Wear" loading="lazy"><div class="overlay"><h3>Bridal Wear</h3><p>Wedding special</p></div></div>
+    <div class="collection-card"><img src="https://picsum.photos/seed/col3/600/800" alt="Kurti Collection" loading="lazy"><div class="overlay"><h3>Kurti Collection</h3><p>Ethnic elegance</p></div></div>
+    <div class="collection-card"><img src="https://picsum.photos/seed/col4/600/800" alt="Western Wear" loading="lazy"><div class="overlay"><h3>Western Wear</h3><p>Contemporary style</p></div></div>
+    <div class="collection-card"><img src="https://picsum.photos/seed/col5/600/800" alt="Party Collection" loading="lazy"><div class="overlay"><h3>Party Collection</h3><p>Sparkle & shine</p></div></div>
+    <div class="collection-card"><img src="https://picsum.photos/seed/col6/600/800" alt="Cotton Classics" loading="lazy"><div class="overlay"><h3>Cotton Classics</h3><p>Everyday comfort</p></div></div>
+    <div class="collection-card"><img src="https://picsum.photos/seed/col7/600/800" alt="Festive Edit" loading="lazy"><div class="overlay"><h3>Festive Edit</h3><p>Celebration ready</p></div></div>
+    <div class="collection-card"><img src="https://picsum.photos/seed/col8/600/800" alt="Office Collection" loading="lazy"><div class="overlay"><h3>Office Collection</h3><p>Professional charm</p></div></div>
+    <div class="collection-card"><img src="https://picsum.photos/seed/col1/600/800" alt="Silk Collection" loading="lazy"><div class="overlay"><h3>Silk Collection</h3><p>Premium silk sarees</p></div></div>
+    <div class="collection-card"><img src="https://picsum.photos/seed/col2/600/800" alt="Bridal Wear" loading="lazy"><div class="overlay"><h3>Bridal Wear</h3><p>Wedding special</p></div></div>
+    <div class="collection-card"><img src="https://picsum.photos/seed/col3/600/800" alt="Kurti Collection" loading="lazy"><div class="overlay"><h3>Kurti Collection</h3><p>Ethnic elegance</p></div></div>
+    <div class="collection-card"><img src="https://picsum.photos/seed/col4/600/800" alt="Western Wear" loading="lazy"><div class="overlay"><h3>Western Wear</h3><p>Contemporary style</p></div></div>
+  </div>
+</section>
+
+<section class="section-padding">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="overline">Curated For You</span>
+      <h2>Featured Collections</h2>
+      <div class="gold-line"></div>
+      <p>Handpicked selections showcasing the finest in women's fashion</p>
+    </div>
+    <div class="featured-collections">
+      <a href="shop.html?category=Sarees" class="featured-card fade-in">
+        <img src="https://picsum.photos/seed/feat1/800/600" alt="Saree Collection" loading="lazy">
+        <div class="featured-overlay">
+          <h3>Saree Collection</h3>
+          <p>Timeless elegance draped in silk & cotton</p>
+          <span class="btn btn-sm btn-outline" style="align-self:flex-start;">Explore Now</span>
+        </div>
+      </a>
+      <a href="shop.html?category=Lehengas" class="featured-card fade-in">
+        <img src="https://picsum.photos/seed/feat2/800/600" alt="Lehenga Collection" loading="lazy">
+        <div class="featured-overlay">
+          <h3>Lehenga Collection</h3>
+          <p>Graceful lehengas for every occasion</p>
+          <span class="btn btn-sm btn-outline" style="align-self:flex-start;">Explore Now</span>
+        </div>
+      </a>
+      <a href="shop.html?category=Gowns" class="featured-card fade-in">
+        <img src="https://picsum.photos/seed/feat3/800/600" alt="Gown Collection" loading="lazy">
+        <div class="featured-overlay">
+          <h3>Gown Collection</h3>
+          <p>Red-carpet worthy evening wear</p>
+          <span class="btn btn-sm btn-outline" style="align-self:flex-start;">Explore Now</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="overline">Just Arrived</span>
+      <h2>New Arrivals</h2>
+      <div class="gold-line"></div>
+      <p>The latest additions to our premium collection</p>
+    </div>
+    <div class="products-grid" id="new-arrivals"></div>
+    <div style="text-align:center;margin-top:50px;">
+      <a href="shop.html?sort=newest" class="btn btn-outline-gold">View All New Arrivals <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="overline">Most Loved</span>
+      <h2>Best Sellers</h2>
+      <div class="gold-line"></div>
+      <p>Our customers' all-time favourites</p>
+    </div>
+    <div class="products-grid" id="best-sellers"></div>
+    <div style="text-align:center;margin-top:50px;">
+      <a href="shop.html?sort=rating" class="btn btn-outline-gold">View All Best Sellers <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="overline">In Style Now</span>
+      <h2>Trending Sarees</h2>
+      <div class="gold-line"></div>
+      <p>The most sought-after sarees this season</p>
+    </div>
+    <div class="products-grid" id="trending-sarees"></div>
+  </div>
+</section>
+
+<section class="section-padding">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="overline">Fashion Forward</span>
+      <h2>Trending Dresses</h2>
+      <div class="gold-line"></div>
+      <p>Dresses that define modern elegance</p>
+    </div>
+    <div class="products-grid" id="trending-dresses"></div>
+  </div>
+</section>
+
+<section class="section-padding" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="overline">Shop By Category</span>
+      <h2>Explore Categories</h2>
+      <div class="gold-line"></div>
+    </div>
+    <div class="categories-grid fade-in">
+      <a href="shop.html?category=Sarees" class="category-card"><div class="cat-icon">👗</div><h4>Sarees</h4><p>Timeless drapes</p></a>
+      <a href="shop.html?category=Kurtis" class="category-card"><div class="cat-icon">👚</div><h4>Kurtis</h4><p>Ethnic charm</p></a>
+      <a href="shop.html?category=Lehengas" class="category-card"><div class="cat-icon">🎀</div><h4>Lehengas</h4><p>Graceful flair</p></a>
+      <a href="shop.html?category=Gowns" class="category-card"><div class="cat-icon">💃</div><h4>Gowns</h4><p>Evening glamour</p></a>
+      <a href="shop.html?category=Long Dresses" class="category-card"><div class="cat-icon">👗</div><h4>Dresses</h4><p>Modern style</p></a>
+      <a href="shop.html?category=Western Wear" class="category-card"><div class="cat-icon">✨</div><h4>Western</h4><p>Contemporary</p></a>
+      <a href="shop.html?category=Accessories" class="category-card"><div class="cat-icon">💎</div><h4>Accessories</h4><p>Complete the look</p></a>
+      <a href="shop.html?category=Night Wear" class="category-card"><div class="cat-icon">🌙</div><h4>Night Wear</h4><p>Luxury comfort</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials-section section-padding">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="overline">What Our Customers Say</span>
+      <h2>Customer Testimonials</h2>
+      <div class="gold-line"></div>
+    </div>
+    <div class="testimonials-grid" id="testimonials-grid"></div>
+  </div>
+</section>
+
+<section class="store-info-section section-padding">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="overline" style="color:var(--accent-gold);">Visit Us</span>
+      <h2 style="color:#fff;">Our Store</h2>
+      <div class="gold-line"></div>
+    </div>
+    <div class="store-info-grid fade-in">
+      <div class="store-info-item">
+        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+        <h4>Location</h4>
+        <p>42, Fashion Avenue, Brigade Road, Bangalore - 560001</p>
+      </div>
+      <div class="store-info-item">
+        <div class="icon"><i class="fas fa-clock"></i></div>
+        <h4>Business Hours</h4>
+        <p>Mon-Sat: 10:00 AM - 9:00 PM<br>Sun: 11:00 AM - 7:00 PM</p>
+      </div>
+      <div class="store-info-item">
+        <div class="icon"><i class="fas fa-phone"></i></div>
+        <h4>Contact</h4>
+        <p>+91 98765 43210<br>info@elegantthreads.com</p>
+      </div>
+      <div class="store-info-item">
+        <div class="icon"><i class="fab fa-whatsapp"></i></div>
+        <h4>WhatsApp</h4>
+        <p>Chat with us on WhatsApp for quick enquiries and orders</p>
+        <a href="https://wa.me/919876543210" target="_blank" class="btn btn-sm btn-whatsapp" style="margin-top:15px;"><i class="fab fa-whatsapp"></i> Chat Now</a>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="store.html" class="btn btn-primary"><i class="fas fa-directions"></i> Visit Our Store</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-text">Elegant <span>Threads</span></div>
+        <p>Where elegance meets fashion. Premium women's clothing boutique offering timeless ethnic and contemporary western wear for the modern woman.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/elegantthreads" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com/elegantthreads" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/919876543210" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:info@elegantthreads.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="shop.html">Shop All</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="shop.html?sort=newest">New Arrivals</a></li>
+          <li><a href="shop.html?sort=rating">Best Sellers</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Categories</h5>
+        <ul>
+          <li><a href="shop.html?category=Sarees">Sarees</a></li>
+          <li><a href="shop.html?category=Kurtis">Kurtis</a></li>
+          <li><a href="shop.html?category=Lehengas">Lehengas</a></li>
+          <li><a href="shop.html?category=Gowns">Gowns</a></li>
+          <li><a href="shop.html?category=Western Wear">Western Wear</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter">
+        <h5>Newsletter</h5>
+        <p>Subscribe for exclusive offers, new arrivals, and fashion tips.</p>
+        <div class="input-group">
+          <input type="email" placeholder="Your email address">
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Elegant Threads. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919876543210" target="_blank" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+<button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const newIds = [2, 4, 7, 12, 23, 38, 55, 65, 72, 85, 86, 98];
+    document.getElementById('new-arrivals').innerHTML = newIds.map(id => App.createProductCard(PRODUCTS.find(p=>p.id===id))).join('');
+
+    const bestIds = [1, 6, 21, 26, 36, 52, 56, 57, 66, 67, 76, 81];
+    document.getElementById('best-sellers').innerHTML = bestIds.map(id => App.createProductCard(PRODUCTS.find(p=>p.id===id))).join('');
+
+    const sareeIds = [1, 2, 5, 7, 9, 15];
+    document.getElementById('trending-sarees').innerHTML = sareeIds.map(id => App.createProductCard(PRODUCTS.find(p=>p.id===id))).join('');
+
+    const dressIds = [56, 57, 58, 62, 100, 107];
+    document.getElementById('trending-dresses').innerHTML = dressIds.map(id => App.createProductCard(PRODUCTS.find(p=>p.id===id))).join('');
+
+    document.getElementById('testimonials-grid').innerHTML = TESTIMONIALS.map(t => `
+      <div class="testimonial-card fade-in">
+        <div class="quote-icon">"</div>
+        <div class="stars">${'★'.repeat(t.rating)}${'☆'.repeat(5-t.rating)}</div>
+        <p class="text">"${t.text}"</p>
+        <div class="author">
+          <img src="${t.avatar}" alt="${t.name}" loading="lazy">
+          <div><h5>${t.name}</h5><p>${t.location}</p></div>
+        </div>
+      </div>
+    `).join('');
+
+    App.initScrollAnimations();
+  });
+</script>
+</body>
+</html>

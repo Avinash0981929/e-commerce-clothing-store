@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Elegant Threads</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div id="loading-screen" class="loading-screen"><div class="loading-spinner"></div><p>Elegant Threads</p></div>
+<nav class="navbar"><div class="container"><a href="index.html" class="navbar-brand"><div class="brand-icon">E</div><div class="brand-text">Elegant <span>Threads</span></div></a><ul class="nav-menu"><li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li><a href="categories.html">Categories</a></li><li><a href="shop.html?sort=newest">New Arrivals</a></li><li><a href="shop.html?sort=rating">Trending</a></li><li><a href="about.html">About</a></li><li><a href="store.html">Visit Store</a></li><li><a href="contact.html">Contact</a></li><li><a href="order-form.html">Order Form</a></li></ul><div class="nav-actions"><button class="open-search" title="Search"><i class="fas fa-search"></i></button><button class="theme-toggle" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button><a href="order-form.html" class="theme-toggle" style="position:relative;"><i class="fas fa-shopping-bag"></i><span class="enquiry-badge">0</span></a><button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button></div></div></nav>
+<div class="mobile-menu"><a href="index.html" class="nav-link">Home</a><a href="shop.html" class="nav-link">Shop</a><a href="categories.html" class="nav-link">Categories</a><a href="shop.html?sort=newest" class="nav-link">New Arrivals</a><a href="shop.html?sort=rating" class="nav-link">Trending</a><a href="about.html" class="nav-link">About</a><a href="store.html" class="nav-link">Visit Store</a><a href="contact.html" class="nav-link">Contact</a><a href="order-form.html" class="nav-link">Order Form</a><div class="mobile-actions"><button class="open-search"><i class="fas fa-search"></i> Search</button><button class="theme-toggle"><i class="fas fa-moon"></i> Dark Mode</button></div></div>
+<div id="search-overlay" class="search-overlay"><div class="search-container"><button class="search-close"><i class="fas fa-times"></i></button><div class="search-input-wrap"><span class="search-icon"><i class="fas fa-search"></i></span><input type="text" id="search-input" placeholder="Search products..."></div><div id="search-results" class="search-results"><p style="text-align:center;color:var(--text-light);padding:30px;">Type to search...</p></div></div></div>
+
+<div class="page-header">
+  <div class="container"><h1>Gallery</h1><div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Gallery</span></div></div>
+</div>
+
+<section class="section-padding">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="overline">Visual Journey</span>
+      <h2>Our Fashion Gallery</h2>
+      <div class="gold-line"></div>
+      <p>A curated collection of our finest designs and store moments</p>
+    </div>
+
+    <div class="category-tabs" style="margin-bottom:40px;">
+      <button class="category-tab active" onclick="filterGallery('all', this)">All</button>
+      <button class="category-tab" onclick="filterGallery('sarees', this)">Sarees</button>
+      <button class="category-tab" onclick="filterGallery('dresses', this)">Dresses</button>
+      <button class="category-tab" onclick="filterGallery('ethnic', this)">Traditional Wear</button>
+      <button class="category-tab" onclick="filterGallery('party', this)">Party Wear</button>
+      <button class="category-tab" onclick="filterGallery('store', this)">Store Interior</button>
+      <button class="category-tab" onclick="filterGallery('collections', this)">Collections</button>
+    </div>
+
+    <div class="gallery-grid" id="gallery-grid"></div>
+  </div>
+</section>
+
+<section class="section-padding" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="overline">Behind The Scenes</span>
+      <h2>Craftsmanship</h2>
+      <div class="gold-line"></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:25px;">
+      <div class="fade-in" style="border-radius:var(--radius-lg);overflow:hidden;position:relative;height:350px;">
+        <img src="https://picsum.photos/seed/craft4/700/500" alt="Weaving Process" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        <div style="position:absolute;bottom:0;left:0;right:0;padding:25px;background:linear-gradient(transparent,rgba(0,0,0,0.7));"><h4 style="color:#fff;">Traditional Weaving</h4><p style="color:rgba(255,255,255,0.8);font-size:0.85rem;">Ancient techniques creating timeless beauty</p></div>
+      </div>
+      <div class="fade-in" style="border-radius:var(--radius-lg);overflow:hidden;position:relative;height:350px;">
+        <img src="https://picsum.photos/seed/craft5/700/500" alt="Embroidery Work" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        <div style="position:absolute;bottom:0;left:0;right:0;padding:25px;background:linear-gradient(transparent,rgba(0,0,0,0.7));"><h4 style="color:#fff;">Embroidery Art</h4><p style="color:rgba(255,255,255,0.8);font-size:0.85rem;">Intricate handwork by master artisans</p></div>
+      </div>
+      <div class="fade-in" style="border-radius:var(--radius-lg);overflow:hidden;position:relative;height:350px;">
+        <img src="https://picsum.photos/seed/craft6/700/500" alt="Fabric Selection" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        <div style="position:absolute;bottom:0;left:0;right:0;padding:25px;background:linear-gradient(transparent,rgba(0,0,0,0.7));"><h4 style="color:#fff;">Fabric Selection</h4><p style="color:rgba(255,255,255,0.8);font-size:0.85rem;">Only the finest materials make the cut</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><div class="brand-text">Elegant <span>Threads</span></div><p>Premium women's clothing boutique.</p><div class="footer-social"><a href="https://instagram.com/elegantthreads" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://facebook.com/elegantthreads" target="_blank"><i class="fab fa-facebook-f"></i></a><a href="https://wa.me/919876543210" target="_blank"><i class="fab fa-whatsapp"></i></a></div></div><div class="footer-col"><h5>Quick Links</h5><ul><li><a href="shop.html">Shop All</a></li><li><a href="categories.html">Categories</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-col"><h5>Categories</h5><ul><li><a href="shop.html?category=Sarees">Sarees</a></li><li><a href="shop.html?category=Kurtis">Kurtis</a></li><li><a href="shop.html?category=Lehengas">Lehengas</a></li><li><a href="shop.html?category=Gowns">Gowns</a></li></ul></div><div class="footer-col footer-newsletter"><h5>Newsletter</h5><p>Subscribe for offers.</p><div class="input-group"><input type="email" placeholder="Your email"><button>Subscribe</button></div></div></div><div class="footer-bottom"><p>&copy; 2026 Elegant Threads. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div></div></div></footer>
+<a href="https://wa.me/919876543210" target="_blank" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+<button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+<script>
+const galleryItems = [
+  { category: 'sarees', img: 'https://picsum.photos/seed/gal1/700/500', title: 'Silk Saree Collection' },
+  { category: 'sarees', img: 'https://picsum.photos/seed/gal2/700/500', title: 'Banarasi Elegance' },
+  { category: 'sarees', img: 'https://picsum.photos/seed/gal3/700/500', title: 'Cotton Comfort' },
+  { category: 'dresses', img: 'https://picsum.photos/seed/gal4/700/500', title: 'Evening Gowns' },
+  { category: 'dresses', img: 'https://picsum.photos/seed/gal5/700/500', title: 'Party Dresses' },
+  { category: 'dresses', img: 'https://picsum.photos/seed/gal6/700/500', title: 'Summer Collection' },
+  { category: 'ethnic', img: 'https://picsum.photos/seed/gal7/700/500', title: 'Lehenga Choli' },
+  { category: 'ethnic', img: 'https://picsum.photos/seed/gal8/700/500', title: 'Salwar Kameez' },
+  { category: 'ethnic', img: 'https://picsum.photos/seed/gal9/700/500', title: 'Kurti Collection' },
+  { category: 'party', img: 'https://picsum.photos/seed/gal10/700/500', title: 'Sequin Elegance' },
+  { category: 'party', img: 'https://picsum.photos/seed/gal11/700/500', title: 'Cocktail Wear' },
+  { category: 'party', img: 'https://picsum.photos/seed/gal12/700/500', title: 'Red Carpet' },
+  { category: 'store', img: 'https://picsum.photos/seed/gal13/700/500', title: 'Store Front' },
+  { category: 'store', img: 'https://picsum.photos/seed/gal14/700/500', title: 'Display Area' },
+  { category: 'store', img: 'https://picsum.photos/seed/gal15/700/500', title: 'Fitting Room' },
+  { category: 'collections', img: 'https://picsum.photos/seed/gal16/700/500', title: 'Festive Edit 2026' },
+  { category: 'collections', img: 'https://picsum.photos/seed/gal17/700/500', title: 'Bridal Collection' },
+  { category: 'collections', img: 'https://picsum.photos/seed/gal18/700/500', title: 'Summer Luxe' }
+];
+
+function renderGallery(filter) {
+  const grid = document.getElementById('gallery-grid');
+  const items = filter === 'all' ? galleryItems : galleryItems.filter(i => i.category === filter);
+  grid.innerHTML = items.map(item => `
+    <div class="gallery-item fade-in" data-category="${item.category}">
+      <img src="${item.img}" alt="${item.title}" loading="lazy">
+      <div class="gallery-overlay"><span><i class="fas fa-expand"></i></span></div>
+    </div>
+  `).join('');
+  App.initScrollAnimations();
+}
+
+function filterGallery(filter, btn) {
+  document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  renderGallery(filter);
+}
+
+document.addEventListener('DOMContentLoaded', () => renderGallery('all'));
+</script>
+</body>
+</html>
